@@ -1,2 +1,2 @@
 # FitFileAnalyser
-A test program for reading FIT (Garmin ANT+) sports sensor files
+A test program for analysing FIT (Garmin ANT+) sports sensor files
