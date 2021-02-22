@@ -151,7 +151,12 @@ function ready() {
         dataArray.push({x:i, y:0});
       }
       else {
-        dataArray.push({x:i, y:data.records[i].speed});
+        if (parseFloat(data.records[i].speed) > 150.0) {  //spike removal
+          //console.log(data.records[i].distance + '  ' + data.records[i].speed)
+        }
+        else {
+          dataArray.push({x:i, y:data.records[i].speed});
+        }
       }
     }
 
